@@ -1,0 +1,192 @@
+.main {
+	min-height:500px;
+	position: relative;
+	top: 20px;
+}
+.right-nav {
+	margin-right: 10px;
+	min-height:496px !important;
+    float: left;
+    background-color: #fafafa;
+    width: 22%;
+}
+.left-nav {
+	width: 74%;
+    min-height:200px !important;
+	float:left;
+	background-color:#f6f6f6;
+	margin-bottom: 8px;
+	position:relative;
+}
+.right-nav dl dd li {
+	list-style-type:none;
+	border-top: 3px solid rgb(255, 255, 255);
+    margin-top: 4px;
+	padding: 10px 4px 0 4px;
+}
+.right-nav dl dt {
+	background-color: rgba(33, 150, 243, 0.08);
+}
+.right-nav dl dd {
+	margin:2px;
+}
+.right-nav li div a h4 {
+	overflow: hidden;
+    text-overflow: ellipsis;
+	font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 3em;
+}
+.right-nav li div a h4:hover {
+    background-color: rgba(96, 125, 139, 0.03);
+}
+.right-nav li div a:hover {
+	background-color: rgba(139, 195, 74, 0.2);
+}
+h4, p {
+	margin:2px;
+}
+.right-nav li p a {
+    font-size: 13px;
+    padding-left: 16px;
+    color: #388E3C;
+    font-weight: bold;
+}
+/* heart blast animation */
+.heart {
+	background: url(../img/heart_animation.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	height: 90px;
+	position:absolute;
+	bottom:-18px;
+	width: 90px;
+	display: inline-block;
+	cursor: pointer;
+	background-size:2900%;
+}
+.heart:hover, .heart:focus{
+	background-position: right;
+	color: #EC407A;
+}
+.heart:hover ~ .lk, .heart:focus ~ .lk{
+	color: #EC407A;
+}
+.dislike:hover, .dislike:focus{
+	color: #9C27B0;
+}
+.dislike:hover ~ .dl, .dislike:focus ~ .dl{
+	color: #9C27B0;
+}
+@-webkit-keyframes heartBlast {
+0% {
+	background-position: left;
+}
+100% {
+	background-position: right;
+}
+}
+
+@keyframes heartBlast {
+	0% {
+	background-position: left;
+}
+100% {
+	background-position: right;
+}
+}
+
+.heartAnimation {
+display: inline-block;
+-webkit-animation-name: heartBlast;
+animation-name: heartBlast;
+-webkit-animation-duration: .8s;
+animation-duration: .8s;
+-webkit-animation-iteration-count: 1;
+animation-iteration-count: 1;
+-webkit-animation-timing-function: steps(28);
+animation-timing-function: steps(28);
+background-position: right;
+}
+.v-stats {
+	margin: 8px 10px 14px 10px;
+	border-top: 1px solid #ddd;
+    box-shadow: 0 -1px 0 0 #BBDEFB;
+}
+.likeCount {
+	position: absolute;
+	font-family: cursive;
+    color: #607D8B;
+	font-size: 13px;
+    margin-top: 8px;
+}
+.lk {
+    margin-left: 60px;
+}
+.dl {
+   margin-left: 140px;
+}
+.ViewCount {
+	margin: 0 0 0 630px;
+    display: inline-block;
+    border-bottom: 2px solid #90A4AE;
+    padding: 2px 11px;
+    color: #546E7A;
+    border-radius: 4px;
+    font-family: cursive;
+}
+.dislike {
+	position: absolute;
+    margin: 7px 0 0 112px;
+    font-size: 25px !important;
+    color: #aab8c2;
+}
+.v-stats .fa-eye {
+	font-size: 18px;
+    color: #00796B;
+}
+.left-nav h3 {
+	margin: 4px 12px;
+}
+.pub-date {
+	font-weight: 800;
+    color: #37474F;
+	margin-bottom:4px;
+	text-indent:20px;
+}
+.vdesc, .pub-date {
+	font-size:14px;
+}
+.vdesc {
+	word-spacing: .2em;
+}
+.detail {
+	padding:10px 15px;
+}
+.ch-logo {
+	text-align: center;
+	display: inline-block;
+    padding: 4px;
+}
+.ch-logo a strong {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    display: -webkit-box;
+    max-width: 160px;
+    text-align: center;
+}
+.ch-logo img {
+	border: 2px solid #bbb;
+    background-color: #fff;
+    border-radius: 2px;
+}
+.play-area, .channel-area {
+	display:inline-block;
+}
+#rt-head {
+	text-align:center;
+	margin:0;
+}

@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+@font-face {
+	font-family:opensans;
+	src:url("../../gallery/font/opensans.ttf");
+}
+
+@font-face {
+	font-family:myrin;
+	src:url("../../gallery/font/myrin.ttf");
+}
+
+body {
+	margin:0;
+	padding:0;
+	font-family: opensans,Arial,SANS-SERIF,Helvetica;
+	background-color:#fff;
+}
+a {
+	text-decoration:none;
+}
+
+.header {
+	background-color: rgba(3, 169, 244, 0.7);height: 62px;
+	box-shadow: #2196F3 0 1px 0;
+	z-index:2;
+	position:fixed;
+	width: 100%;
+}
+
+.left {
+	float:left;
+}
+
+.logo-container {
+	margin-left:12px;
+	clear:left;
+}
+.logo-container h1 {
+	display:inline-block;
+	overflow:auto;
+    font-weight: 500;
+    font-size: 33px;
+    color: #3E3E3E;
+    margin: 8px auto auto;
+	font-family: myrin;
+}
+.logo-container img {
+	margin-top: 8px;
+    margin-left: 2px;
+    width: 40px;
+}
+.search-container {
+	width: 550px;
+    margin-left: 50px;
+	padding-top:15px;
+}
+
+#search-box {
+	border-radius: 19px 0 0 19px;
+    padding-left: 21px;
+    font-size:14px;
+	display:block;
+	position:relative;
+	width: 400px;
+	padding:9px;
+	border: 1px solid #afafaf;
+}
+#search-box, #search-btn {
+	font-family:opensans;
+	padding-top:4px;
+	padding-bottom:4px;
+	float:left;
+	}
+#search-btn {
+	border-radius: 2px;
+	background-color:#2196F3;
+    font-size: 16px;
+	border: 0px;
+    box-shadow: #777 0px 2px 0px;
+	padding-right: 24px;
+	padding-left: 34px;
+	margin-left:6px;
+	color:#fff;
+	cursor: pointer;
+}
+
+.nav-container {
+	margin-top: 24px;
+	margin-left: 0;
+	font-weight:600;
+    font-size: 14px;
+    font-family: opensans;
+	clear:right;
+}
+
+.nav-container a {
+	letter-spacing: 0.3px;
+	font-weight: 500;
+	margin:auto 3px;
+	padding: 16px 5px;
+	color: #333;
+}
+
+.nav-container a:hover {
+	border-bottom:1px solid #bbb;
+	padding-bottom: 3px;
+}
+
+.search-icon {
+	display: inline-block;
+    position: relative;
+    float: left;
+    margin: 8px -96px;
+    color: #fff;
+}
+
+.dropdown {
+	position: absolute;
+    margin-left: 112px;
+	margin-top: 8px;
+	background-color: #fff;
+    width:170px;
+	box-shadow: rgba(0,0,0,.05) 0 2px 12px 5px,rgba(0,0,0,.1) 0 0 0 1px;
+	border-radius:8px;
+	display:none;
+}
+
+.dropdown ol {
+	list-style-type:none;
+	padding:0;
+	font-weight: 500;
+}
+
+.dropdown ol li {
+	margin: 7px auto;
+    padding: 7px 15px;
+}
+
+.dropdown ol li:hover {
+	background-color:#F2F2F2;
+}
+.dropdown ol li a:hover {
+	border:0;
+}
+#b {
+	margin-left: 286px;
+}
